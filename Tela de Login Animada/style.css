@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-:root {
-  --white: var(#fff);
-}
 
 * {
   margin: 0;
@@ -19,29 +16,94 @@
 
 body {
   background: #672c66;
-  margin: 1rem auto;
   height: 100vh;
   width: 100%;
   font-size: 16px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 h2 {
   text-align: center;
   color: #672c66;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 .conteiner {
   background-color: #fff;
   padding: 1rem;
   max-width: 25rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
 }
 input {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #672c66;
+  background-color: #ffe6ff;
   margin-bottom: 1rem;
-  padding: .9rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+label {
+  color: #672c66;
+  font-size: 0.8rem;
+}
+
+.eye-conteiner {
+  position: relative;
+}
+
+#eye-icon {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  color: #672c66;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.creat-btn {
+  background-color: #672c66;
+  border: 0;
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.creat-btn:hover {
+  background-color: #7c357b;
+}
+
+.quest-link {
+  text-align: center;
+  margin: 0.5rem 0;
+  color: #672c66;
+}
+.division {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 1rem 0;
+}
+.ouath-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ouath-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.ouath-buttons button:hover {
+  background-color: #a3a3a3;
+}
+.ouath-buttons button i {
+  margin-right: 0.5rem;
 }
